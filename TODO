@@ -1,3 +1,9 @@
 Todo:
   ☐ Validate inputs
   ☐ Cleanup any unecessary dependencies
+
+Enhance/learn:
+  ☐ Deploy containerized Flask API
+  Service worker:
+    ☐ LightHouse pwa tests
+    ☐ Caching policy
