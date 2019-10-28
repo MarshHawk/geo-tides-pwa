@@ -1,0 +1,37 @@
+{
+    "paths": [
+        {
+            "name": "/tides",
+            "lambdaFunction": "tidesfunction",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "tidesapi",
+    "apiName": "tidesapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "tidesfunction"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-geo-tides-pwa-tidespwa-152911-authRole",
+        "unAuthRoleName": "amplify-geo-tides-pwa-tidespwa-152911-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "tidesfunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

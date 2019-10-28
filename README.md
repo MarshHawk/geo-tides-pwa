@@ -1,3 +1,8 @@
+Choices
+Robust dynamics for end-user.
+Get it done with lambda. (Python transition)
+Interview inspiration (Material-ui, typescript, express)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

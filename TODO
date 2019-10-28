@@ -1,9 +1,43 @@
 Todo:
+  ✔ No location error handling (log response error) @done(19-10-27 20:26)
+  ☐ gitignore correct amplify
+  ☐ Handle map location data points (TidalSearchIcons)
+  ☐ Encrypt api key
+  ☐ custom sign-in, sign-out
   ☐ Validate inputs
+  ☐ Required field behavior
+  ☐ Location Search
+  ☐ Custom Auth styles
+  ☐ User preference storage
+  ☐ Icons in UI
+  ☐ Responsive map height
+  ☐ Paper table grid and color themes
   ☐ Cleanup any unecessary dependencies
+  ☐ Federated identity providers
+  ☐ Sign-out
+  ☐ return of the sliders
+  ☐ production cleanup attempt 1
+  ☐ Warnings in console
+  ☐ Configure and allign snack test
+  ☐ Copyright
+  ☐ correctly manage timezone
+  ☐ Debouncing
+  ☐ Toolbar ugly header
+  ☐ Info modal with legend from icons
+  ☐ Info icon color (lighter gradient)
+  ☐ slider on change
+  ☐ Spinners
+  ☐ document decisions according to spec
+  ☐ Map margin
+  ☐ Modal btw
 
 Enhance/learn:
   ☐ Deploy containerized Flask API
   Service worker:
     ☐ LightHouse pwa tests
     ☐ Caching policy
+  ☐ GraphQL
+  ☐ OAuth
+  ☐ Typescript
+  ☐ Layout toggling
+  ☐ DnD

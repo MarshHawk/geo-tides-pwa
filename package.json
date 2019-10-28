@@ -5,6 +5,9 @@
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.5.0",
+    "aws-amplify": "^1.2.3",
+    "aws-amplify-react": "^2.5.3",
     "google-map-react": "^1.1.5",
     "mdi-material-ui": "^6.8.0",
     "react": "^16.11.0",
