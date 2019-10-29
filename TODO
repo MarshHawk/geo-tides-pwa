@@ -20,7 +20,7 @@ Todo:
   ✔ Warnings in console @done(19-10-29 08:03)
   ☐ theme cleanup
   ✔ Correctly manage timezone @done(19-10-29 08:03)
-  ☐ Secure Google Maps API key by domain (ok to publish)
+  ✔ Secure Google Maps API key by domain (ok to publish) @done(19-10-29 13:22)
   ☐ Hide WorlTides api key
     ☐ Add environment variable via cloudformation: https://github.com/aws-amplify/amplify-cli/issues/684
 
@@ -30,6 +30,7 @@ Todo:
   ☐ Custom signIn form
   ☐ Address deleted amplify/team-provider-info.json
   ☐ add user createdTime to schema
+  ☐ Reset place search on lat/lon change
   ✔ Validate inputs @started(19-10-27 23:17) @done(19-10-28 00:17) @lasted(1h34s)
   ✔ Required field behavior @done(19-10-28 00:17)
   ✔ info icon styling @done(19-10-27 23:02)

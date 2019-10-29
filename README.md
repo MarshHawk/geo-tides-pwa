@@ -4,6 +4,7 @@
 - Use autoselect to search places
 - Move pins with Latitude and Longitude inputs
 - Store user preferences via form in Info Modal
+- __If There is a search error, it's most likely because the location coordinates are not within one degree of latitude or longitude of an observation station__
 
 ### Goals
 - Use the affordances of AWS Amplify framework to rapidly and reliably complete a coding exercise
