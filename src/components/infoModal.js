@@ -18,6 +18,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { API, graphqlOperation } from "aws-amplify";
 import localforage from "localforage";
 import { updateUser } from "../graphql/mutations";
+import {timezoneFallback} from '../model';
 
 export function InfoModal({
   uiState,
@@ -127,7 +128,7 @@ export function InfoModal({
                   <TableCell>Preferred Display Timezone</TableCell>
                   <TableCell>
                     <Select
-                      value={userPrefState.preferredTimezone}
+                      value={timezoneFallback(userPrefState)}
                       onChange={handleTimezoneChange}
                       autoWidth
                     >

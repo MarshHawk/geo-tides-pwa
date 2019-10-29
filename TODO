@@ -20,6 +20,7 @@ Todo:
   ✔ Warnings in console @done(19-10-29 08:03)
   ☐ theme cleanup
   ✔ Correctly manage timezone @done(19-10-29 08:03)
+  ☐ Secure Google Maps API key by domain (ok to publish)
   ☐ Hide WorlTides api key
     ☐ Add environment variable via cloudformation: https://github.com/aws-amplify/amplify-cli/issues/684
 
@@ -35,7 +36,7 @@ Todo:
   ✔ Icons in UI @done(19-10-27 22:01)
   ✔ Responsive map height @done(19-10-27 22:11)
   ✘ Color theme @cancelled(19-10-27 22:12)
-  ☐ Location Search
+  ✔ Location Search @done(19-10-29 12:59)
   ☐ Avatar photo storage
   ☐ Typescript
   ☐ Specific error handling

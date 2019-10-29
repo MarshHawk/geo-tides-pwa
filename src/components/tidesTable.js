@@ -8,6 +8,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
 import moment from 'moment-timezone';
+import {timezoneFallback} from '../model';
 
 export const TidesTable = ({ responseLocation, userPrefs }) => (
   <React.Fragment>
@@ -48,14 +49,14 @@ export const TidesTable = ({ responseLocation, userPrefs }) => (
         </TableRow>
       </TableHead>
       <TableBody>
-        {responseLocation.extremes.map(x => (
+        {responseLocation.extremes.map(x => {console.log(userPrefs.preferredTimezone); return (
           <TableRow key={x.dt}>
             <TableCell>{x.type}</TableCell>
-            <TableCell>{moment.unix(x.dt).tz(userPrefs.preferredTimezone).format("dddd, MMMM Do YYYY, h:mm:ss a")}</TableCell>
-            <TableCell>{userPrefs.preferredTimezone}</TableCell>
+            <TableCell>{moment.unix(x.dt).tz(timezoneFallback(userPrefs)).format("dddd, MMMM Do YYYY, h:mm:ss a")}</TableCell>
+            <TableCell>{timezoneFallback(userPrefs)}</TableCell>
             <TableCell>{x.height + " meters"}</TableCell>
           </TableRow>
-        ))}
+        )})}
       </TableBody>
     </Table>
   </React.Fragment>

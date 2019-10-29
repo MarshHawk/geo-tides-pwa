@@ -20,7 +20,7 @@ export const defaultState = {
       useGeolocation: false,
       //useLocationTracking: false,
       //disableCache: false,
-      preferredTimezone: "EST"
+      preferredTimezone: "America/New_York"
     },
     ui: {
       openModal: false,
@@ -46,3 +46,5 @@ export const defaultState = {
       ]
     }
   };
+
+  export const timezoneFallback = (userPrefs) => (userPrefs.preferredTimezone) ? userPrefs.preferredTimezone : "America/New_York"

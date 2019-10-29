@@ -20,7 +20,6 @@ import { withAuthenticator } from "aws-amplify-react";
 import { Auth } from "aws-amplify";
 import { API, graphqlOperation } from "aws-amplify";
 import { listUsers } from "./graphql/queries";
-import moment from 'moment-timezone';
 import {
   searchReducer,
   responseReducer,
@@ -30,6 +29,7 @@ import {
 import localforage from "localforage";
 import { searchTides } from "./actions";
 import { TidesTable } from "./components/tidesTable";
+import { PlaceSearch } from "./components/placeSearch";
 import { useStyles } from "./styles";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ResponsiveGoogleMap } from "./components/responsiveGoogleMap";
@@ -73,7 +73,7 @@ function App({ defaultState }) {
         const item = graphUsers.data.listUsers.items[0];
         userPrefDispatch({ type: "UPDATE_ALL", payload: item });
         await localforage.setItem(`tidalextremist${user.username}`, item);
-        result=item
+        result = item;
       } else {
         userPrefDispatch({ type: "UPDATE_ALL", payload: cachedUserPref });
         result = cachedUserPref;
@@ -151,7 +151,10 @@ function App({ defaultState }) {
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
             <Paper className={classes.paper}>
-              <TidesTable responseLocation={responseLocation} userPrefs={userPref} />
+              <TidesTable
+                responseLocation={responseLocation}
+                userPrefs={userPref}
+              />
             </Paper>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -194,6 +197,13 @@ function App({ defaultState }) {
                   ]}
                 />
               </Snackbar>
+              <Grid container spacing={8}>
+                <Grid item xs={12} md={12}>
+                  <Paper className={classes.paper}>
+                    <PlaceSearch setSearchLocation={setSearchLocation} />
+                  </Paper>
+                </Grid>
+              </Grid>
               <Grid container spacing={4}>
                 <Grid item xs={6} md={6}>
                   <Paper className={classes.paper}>

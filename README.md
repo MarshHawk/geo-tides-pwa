@@ -1,9 +1,16 @@
-Choices:
-Robust dynamics for end-user.
-Get it done with lambda. (Python transition)
-Interview inspiration (Material-ui, typescript, express)
-Get outside of my comfort zone by using GraphQL and React Hooks and not using Redux or Redux-Saga
+## [Search Predicted Tidal Extremes](https://d20hwmqjn6z198.cloudfront.net)
 
-References
+### How To
+- Use autoselect to search places
+- Move pins with Latitude and Longitude inputs
+- Store user preferences via form in Info Modal
 
-This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Goals
+- Use the affordances of AWS Amplify framework to rapidly and reliably complete a coding exercise
+- Create robust and unique client dynamics for end-user
+- Use useful technologies: Material-UI, GraphQL, DynamoDB, express
+- Get outside of comfort zone by using React Hooks and not using Redux or Redux-Saga
+
+### References
+
+- This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
