@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import "./index.css";
-import App from "./App";
-import { Provider } from "react-redux";
-import Amplify from 'aws-amplify';
-import config from './aws-exports';
-
+import { Hub } from 'aws-amplify';
+import Amplify from "aws-amplify";
+import config from "./aws-exports";
 import * as serviceWorker from "./serviceWorker";
-import configureStore from "./store";
+import App from "./app";
+import { defaultState } from "./model";
+import { handleAuth } from './hub';
 
 Amplify.configure(config);
 
+Hub.listen('auth', handleAuth);
+
 ReactDOM.render(
-    <App />,
+  <App defaultState={defaultState} />,
   document.getElementById("root")
 );
 

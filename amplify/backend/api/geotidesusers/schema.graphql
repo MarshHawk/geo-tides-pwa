@@ -1,0 +1,6 @@
+type user @model {
+  id: ID!
+  name: String!
+  useGeolocation: Boolean
+  preferredTimezone: String
+}

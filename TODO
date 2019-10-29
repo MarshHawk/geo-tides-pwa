@@ -1,43 +1,65 @@
 Todo:
   ✔ No location error handling (log response error) @done(19-10-27 20:26)
-  ☐ gitignore correct amplify
-  ☐ Handle map location data points (TidalSearchIcons)
-  ☐ Encrypt api key
-  ☐ custom sign-in, sign-out
-  ☐ Validate inputs
-  ☐ Required field behavior
-  ☐ Location Search
-  ☐ Custom Auth styles
-  ☐ User preference storage
-  ☐ Icons in UI
-  ☐ Responsive map height
-  ☐ Paper table grid and color themes
-  ☐ Cleanup any unecessary dependencies
+  ✔ gitignore correct amplify @done(19-10-27 20:48)
+  ✔ Handle map location data points (TidalSearchIcons) @done(19-10-27 21:47)
+  ✘ Render predicted tidal extreme response/request lat/lon as tables @cancelled(19-10-27 22:17)
+  ✔ Predicted tidal extrem default @done(19-10-27 21:57)
+  ✔ Deploy @done(19-10-27 23:26)
+  ✔ Sign-out @done(19-10-27 23:02)
+  ☐ Geolocation flow @started(19-10-28 17:36)
+    ☐ Cleaner implementation
+  ✔ User preference flow @done(19-10-29 05:29)
+  ✔ Custom sign-in @done(19-10-28 23:38)
+  ✔ User preference storage @done(19-10-29 05:29)
+  ✔ Info modal @done(19-10-28 12:58)
+  ☐ Return of the sliders @started(19-10-28 00:44)
+  ☐ slider on change with map internals
+  ✔ Favicon @done(19-10-29 07:13)
+  ✔ Cleanup any unecessary dependencies @done(19-10-29 08:03)
+  ✔ production cleanup attempt 1 @done(19-10-29 08:03)
+  ✔ Warnings in console @done(19-10-29 08:03)
+  ☐ theme cleanup
+  ✔ Correctly manage timezone @done(19-10-29 08:03)
+  ☐ Hide WorlTides api key
+    ☐ Add environment variable via cloudformation: https://github.com/aws-amplify/amplify-cli/issues/684
+
+----------------HARD STOP (MUST SUBMIT)---------------------------------------------
+
   ☐ Federated identity providers
-  ☐ Sign-out
-  ☐ return of the sliders
-  ☐ production cleanup attempt 1
-  ☐ Warnings in console
-  ☐ Configure and allign snack test
+  ☐ Custom signIn form
+  ☐ Address deleted amplify/team-provider-info.json
+  ☐ add user createdTime to schema
+  ✔ Validate inputs @started(19-10-27 23:17) @done(19-10-28 00:17) @lasted(1h34s)
+  ✔ Required field behavior @done(19-10-28 00:17)
+  ✔ info icon styling @done(19-10-27 23:02)
+  ✔ Icons in UI @done(19-10-27 22:01)
+  ✔ Responsive map height @done(19-10-27 22:11)
+  ✘ Color theme @cancelled(19-10-27 22:12)
+  ☐ Location Search
+  ☐ Avatar photo storage
+  ☐ Typescript
+  ☐ Specific error handling
+  ☐ Info modal legends from icons
+  ✘ Configure and allign snack test @cancelled(19-10-27 22:12)
   ☐ Copyright
-  ☐ correctly manage timezone
-  ☐ Debouncing
-  ☐ Toolbar ugly header
-  ☐ Info modal with legend from icons
-  ☐ Info icon color (lighter gradient)
-  ☐ slider on change
+  ☐ Additional user preferences
+  ✘ Debouncing @cancelled(19-10-27 22:13)
+  ✔ Toolbar ugly header @done(19-10-27 22:13)
+  ☐ Gradient buttons
   ☐ Spinners
   ☐ document decisions according to spec
-  ☐ Map margin
-  ☐ Modal btw
+  ✔ Map margin @done(19-10-27 22:16)
+
+Other known issues:
+  ☐ Pin overlap on zoom-out
 
 Enhance/learn:
   ☐ Deploy containerized Flask API
   Service worker:
     ☐ LightHouse pwa tests
-    ☐ Caching policy
-  ☐ GraphQL
+    ☐ Caching policy (service worker caching)
+  ✔ GraphQL @done(19-10-28 23:56)
   ☐ OAuth
-  ☐ Typescript
+  ☐ Unit tests
   ☐ Layout toggling
   ☐ DnD
