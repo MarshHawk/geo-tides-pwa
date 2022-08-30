@@ -11,7 +11,7 @@
     "aws-amplify-react": "^2.5.3",
     "google-map-react": "^1.1.5",
     "localforage": "^1.7.3",
-    "moment-timezone": "^0.5.27",
+    "moment-timezone": "^0.5.35",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-places-autocomplete": "^7.2.1",
